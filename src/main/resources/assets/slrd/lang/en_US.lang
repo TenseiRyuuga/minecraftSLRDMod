@@ -1,0 +1,16 @@
+# Items
+item.ingotDeadifferium.name=Deadifferium Ingot
+item.tinyDeadifferium.name=Tiny Deadiffer
+item.Jen.name=Jen
+item.DJJen.name=DJ Jen
+item.RIPJen.name=RIP Jen
+item.LOVEJen.name=LOVE Jen
+item.itemid.name=Item Name
+
+# Blocks
+tile.oreDeadifferium.name=Deadifferium Ore
+tile.blockid.name=Block Name
+
+#mod title
+itemGroup.slrd=SLRD Mod
+
