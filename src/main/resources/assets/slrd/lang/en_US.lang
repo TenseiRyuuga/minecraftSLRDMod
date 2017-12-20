@@ -6,6 +6,11 @@ item.DJJen.name=DJ Jen
 item.RIPJen.name=RIP Jen
 item.LOVEJen.name=LOVE Jen
 item.itemid.name=Item Name
+item.TeeHeeDiamond.name=TeeHee Diamond
+item.scrollteleport.name=Teleport Scroll
+
+# Tools
+item.deadifferteeheepickaxe.name=Deadiffer Pickaxe
 
 # Blocks
 tile.oreDeadifferium.name=Deadifferium Ore
