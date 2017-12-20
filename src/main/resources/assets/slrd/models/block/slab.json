@@ -10,6 +10,6 @@
                 "west":  { "uv": [ 0, 8, 16, 16 ], "texture": "#side", "cullface": "west" },
                 "east":  { "uv": [ 0, 8, 16, 16 ], "texture": "#side", "cullface": "east" }
             }
-        },
+        }
     ]
 }
