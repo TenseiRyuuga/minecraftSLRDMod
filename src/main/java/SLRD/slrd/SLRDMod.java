@@ -24,7 +24,7 @@ public class SLRDMod {
 
 	public static final String modId = "slrd";
 	public static final String name = "Tutorial Mod";
-	public static final String version = "0.5.6";
+	public static final String version = "0.5.7";
 
 	public static final SLRDTab creativeTab = new SLRDTab();
 
