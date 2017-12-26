@@ -17,6 +17,8 @@ public class ModBlocks {
 
     public static BlockOre oreDeadifferium;
     public static BlockOre oreTeeHeeDiamond;
+    
+    public static BlockBaseDatabaseBlock DBlock;
 
     public static void init() {
         oreDeadifferium = register(new BlockOre("oreDeadifferium"));
@@ -24,6 +26,7 @@ public class ModBlocks {
         DFurnace = register(new BlockBase(Material.ROCK, "DFurnace"));
         StandardTestBlock = register(new BlockBase(Material.ROCK, "StandardTestBlock"));
         Ore_Engie = register(new BlockBase(Material.ROCK, "oreengie"));
+        DBlock = register(new BlockBaseDatabaseBlock(Material.ROCK, "DBlock"));
 
     }
 
