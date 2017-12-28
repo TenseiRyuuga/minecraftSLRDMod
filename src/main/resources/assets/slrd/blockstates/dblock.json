@@ -14,6 +14,13 @@
                     "end": "blocks/stone"
                 },
                 "model": "cube_column"
+            }],
+        "inventory": [{
+                "textures": {
+                    "side": "slrd:blocks/dfurnacefrontoff",
+                    "end": "blocks/stone"
+                },
+                "model": "cube_column"
             }]
     }
 }

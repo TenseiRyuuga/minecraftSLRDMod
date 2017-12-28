@@ -8,6 +8,7 @@ item.LOVEJen.name=LOVE Jen
 item.itemid.name=Item Name
 item.TeeHeeDiamond.name=TeeHee Diamond
 item.scrollteleport.name=Teleport Scroll
+item.DBlock.name=Database Block
 
 # Tools
 item.deadifferteeheepickaxe.name=Deadiffer Pickaxe

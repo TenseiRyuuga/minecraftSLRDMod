@@ -21,10 +21,13 @@ public class ModBlocks {
     public static BlockBaseDatabaseBlock DBlock;
 
     public static void init() {
+        //Standard block for testing purposes 
+        StandardTestBlock = register(new BlockBase(Material.ROCK, "StandardTestBlock"));
+        
         oreDeadifferium = register(new BlockOre("oreDeadifferium"));
         oreTeeHeeDiamond = register(new BlockSpecialOre("oreTeeHeeDiamond", ModItems.TeeHeeDiamond, 0, 1, 6));
         DFurnace = register(new BlockBase(Material.ROCK, "DFurnace"));
-        StandardTestBlock = register(new BlockBase(Material.ROCK, "StandardTestBlock"));
+       
         //Ore_Engie = register(new BlockBase(Material.ROCK, "oreengie"));
         DBlock = register(new BlockBaseDatabaseBlock(Material.ROCK, "DBlock"));
 
