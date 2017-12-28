@@ -13,7 +13,7 @@ public class ModBlocks {
     public static LoadDriver driver = new LoadDriver();
     public static BlockBase DFurnace;
     public static BlockBase StandardTestBlock;
-    public static BlockBase Ore_Engie;
+    //public static BlockBase Ore_Engie;
 
     public static BlockOre oreDeadifferium;
     public static BlockOre oreTeeHeeDiamond;
@@ -25,7 +25,7 @@ public class ModBlocks {
         oreTeeHeeDiamond = register(new BlockSpecialOre("oreTeeHeeDiamond", ModItems.TeeHeeDiamond, 0, 1, 6));
         DFurnace = register(new BlockBase(Material.ROCK, "DFurnace"));
         StandardTestBlock = register(new BlockBase(Material.ROCK, "StandardTestBlock"));
-        Ore_Engie = register(new BlockBase(Material.ROCK, "oreengie"));
+        //Ore_Engie = register(new BlockBase(Material.ROCK, "oreengie"));
         DBlock = register(new BlockBaseDatabaseBlock(Material.ROCK, "DBlock"));
 
     }

@@ -1,36 +1,46 @@
 package SLRD.slrd.block;
 
-import java.util.Random;
-
-import SLRD.slrd.SLRDMod;
-import SLRD.slrd.item.ItemModelProvider;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockStone;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.MapColor;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.properties.PropertyEnum;
-import net.minecraft.block.state.BlockStateContainer;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
-public class BlockBaseDatabaseBlock extends BlockBase {
+import net.minecraft.block.material.Material;
+
+public class BlockBaseDatabaseBlock extends BlockBase{
 
     Connection conn = null;
+    Statement stmt;
+    ResultSet rs;
+    String query;
 
     public BlockBaseDatabaseBlock(Material materialIn, String name) {
         super(materialIn, name);
         System.out.println("Steady DB?");
         try {
             conn
-                    = DriverManager.getConnection("jdbc:mysql://localhost/test?"
+                    = DriverManager.getConnection("jdbc:mysql://localhost/slrd?"
                             + "user=SLRD&password=DeadifferTeeHee");
             System.out.println("Go DB!" + conn);
 
-    // Do something with the Connection
+            //add playername to db
+            String input = "ryuuga";
+//            EntityPlayerSP input = Minecraft.getMinecraft().player;
+//            stmt = conn.createStatement();
+//            query = "INSERT INTO `test`(`PlayerID`) VALUES ('" + Player + "')";
+
+            //Create a database
+            stmt = conn.createStatement();
+            query = "SELECT * FROM `test`";
+            rs = stmt.executeQuery(query);
+            System.out.println("Database rs:" + rs);
+
+            while (rs.next()) {
+                System.out.println("Resultset rs:" + rs.getString("PlayerID"));
+            }
+
+            // Do something with the Connection
         } catch (SQLException ex) {
             // handle any errors
             System.out.println("SQLException: " + ex.getMessage());

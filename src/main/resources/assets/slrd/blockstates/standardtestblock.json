@@ -2,12 +2,10 @@
     "forge_marker": 1,
     "defaults": {
         "textures": {
-            "all": "slrd:blocks/dfurnacefrontoff"
+            "all": "blocks/stone"
         },
         "model": "cube_all",
         "uvlock": true
     }
   
 }
-
-

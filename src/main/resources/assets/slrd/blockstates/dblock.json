@@ -1,0 +1,19 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "textures": {
+            "all": "slrd:blocks/oreteeheediamond"
+        },
+        "model": "cube_all",
+        "uvlock": true
+    },
+    "variants": {
+        "normal": [{
+                "textures": {
+                    "side": "slrd:blocks/dfurnacefrontoff",
+                    "end": "blocks/stone"
+                },
+                "model": "cube_column"
+            }]
+    }
+}
